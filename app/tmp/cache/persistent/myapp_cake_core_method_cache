@@ -1,0 +1,2 @@
+1452302807
+a:3:{i:0;b:0;s:4:"name";a:5:{s:32:"82c7d07254fe1c05cd25e9b0c34746fe";s:8:"`sg_sst`";s:32:"972b98767ea61ed6e3fd8cd9643916be";s:15:"`tipos_correos`";s:32:"1e7dfcc21a248dadb68440a5b9547d4d";s:18:"`TiposCorreo`.`id`";s:32:"cbe16c5061d8ef5fe5f4f9ccfc6878e5";s:27:"`TiposCorreo`.`tipo_correo`";s:32:"c8dea6b02a9cd2fae59b1f4f492450a6";s:13:"`TiposCorreo`";}s:6:"fields";a:2:{s:32:"b306036eb125604dc2d6b297599efec2";a:2:{i:0;s:18:"`TiposCorreo`.`id`";i:1;s:27:"`TiposCorreo`.`tipo_correo`";}s:32:"7a8605ecb6c4312775a8fe8edd6c6277";a:1:{i:0;s:18:"`TiposCorreo`.`id`";}}}

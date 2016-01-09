@@ -72,7 +72,7 @@ class DATABASE_CONFIG {
 		'host' => '127.0.0.1',
 		'login' => 'avalderramajaram',
 		'password' => '',
-		'database' => 'c9',
+		'database' => 'sg_sst',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
