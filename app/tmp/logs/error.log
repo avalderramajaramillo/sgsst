@@ -16,3 +16,12 @@ Request URL: /sedes/add
 Stack Trace:
 #0 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-01-10 03:58:51 Error: [MissingControllerException] Controller class EmpresasPersonasController could not be found.
+Exception Attributes: array (
+  'class' => 'EmpresasPersonasController',
+  'plugin' => NULL,
+)
+Request URL: /empresas_personas
+Stack Trace:
+#0 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
