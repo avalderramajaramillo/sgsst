@@ -25,3 +25,12 @@ Request URL: /empresas_personas
 Stack Trace:
 #0 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-01-11 02:18:53 Error: [MissingControllerException] Controller class CaracterisutcasSeedesController could not be found.
+Exception Attributes: array (
+  'class' => 'CaracterisutcasSeedesController',
+  'plugin' => NULL,
+)
+Request URL: /CaracterisutcasSeedes
+Stack Trace:
+#0 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
