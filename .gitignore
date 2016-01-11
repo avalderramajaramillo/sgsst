@@ -6,6 +6,7 @@
 /tags
 *.mo
 /app/Config/database.php
+/app/temp
 
 # IDE and editor specific files #
 #################################
