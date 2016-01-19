@@ -34,3 +34,1055 @@ Request URL: /CaracterisutcasSeedes
 Stack Trace:
 #0 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-01-12 19:41:25 Error: [MissingControllerException] Controller class OrganigramaController could not be found.
+Exception Attributes: array (
+  'class' => 'OrganigramaController',
+  'plugin' => NULL,
+)
+Request URL: /organigrama
+Stack Trace:
+#0 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-12 19:41:33 Error: [MissingControllerException] Controller class OrganigramaController could not be found.
+Exception Attributes: array (
+  'class' => 'OrganigramaController',
+  'plugin' => NULL,
+)
+Request URL: /Organigrama
+Stack Trace:
+#0 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-12 20:15:48 Error: [MissingActionException] Action CargosPersonasController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'CargosPersonasController',
+  'action' => 'index',
+)
+Request URL: /cargos_personas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CargosPersonasController), Object(CakeRequest))
+#2 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-12 20:24:20 Error: Fatal Error (1): Call to a member function paginate() on a non-object in [/home/ubuntu/workspace/app/Controller/OrganigramasController.php, line 12]
+2016-01-12 20:24:20 Error: [FatalErrorException] Call to a member function paginate() on a non-object
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 12, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 12, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-12 20:32:23 Error: Fatal Error (1): Call to a member function generateTreeList() on a non-object in [/home/ubuntu/workspace/app/Controller/OrganigramasController.php, line 28]
+2016-01-12 20:32:23 Error: [FatalErrorException] Call to a member function generateTreeList() on a non-object
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 28)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 28, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 28, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-12 20:34:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Organigrama))
+#5 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(33): Model->__call('generateTreeLis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(33): Organigrama->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: OrganigramasController->index()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-12 20:42:52 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Organigrama))
+#5 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(33): Model->__call('generateTreeLis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(33): Organigrama->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: OrganigramasController->index()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-12 20:43:00 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Organigrama))
+#5 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(33): Model->__call('generateTreeLis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(33): Organigrama->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: OrganigramasController->index()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-12 20:44:42 Error: Fatal Error (1): Call to a member function generateTreeList() on a non-object in [/home/ubuntu/workspace/app/Controller/OrganigramasController.php, line 28]
+2016-01-12 20:44:42 Error: [FatalErrorException] Call to a member function generateTreeList() on a non-object
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 28)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 28, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 28, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-12 20:45:12 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Organigrama))
+#5 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(33): Model->__call('generateTreeLis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(33): Organigrama->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: OrganigramasController->index()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-12 20:49:32 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Organigrama))
+#5 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(33): Model->__call('generateTreeLis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(33): Organigrama->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: OrganigramasController->index()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-12 20:51:31 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Organigrama))
+#5 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(33): Model->__call('generateTreeLis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(33): Organigrama->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: OrganigramasController->index()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-12 20:52:33 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Organigrama))
+#5 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(32): Model->__call('generateTreeLis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(32): Organigrama->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: OrganigramasController->index()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-12 20:52:52 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Organigrama))
+#5 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(32): Model->__call('generateTreeLis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(32): Organigrama->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: OrganigramasController->index()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-12 20:53:52 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Organigrama))
+#5 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(32): Model->__call('generateTreeLis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(32): Organigrama->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: OrganigramasController->index()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-12 21:27:52 Error: Fatal Error (4): syntax error, unexpected '>' in [/home/ubuntu/workspace/app/View/Layouts/default.ctp, line 50]
+2016-01-12 21:27:52 Error: [FatalErrorException] syntax error, unexpected '>'
+Request URL: /organigramas/index/page:2
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 50, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 50, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-12 21:28:47 Error: Fatal Error (4): syntax error, unexpected '>' in [/home/ubuntu/workspace/app/View/Layouts/default.ctp, line 50]
+2016-01-12 21:28:47 Error: [FatalErrorException] syntax error, unexpected '>'
+Request URL: /organigramas/index/page:2
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 50, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 50, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-12 21:28:54 Error: Fatal Error (4): syntax error, unexpected '>' in [/home/ubuntu/workspace/app/View/Layouts/default.ctp, line 50]
+2016-01-12 21:28:54 Error: [FatalErrorException] syntax error, unexpected '>'
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 50, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 50, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 04:36:42 Error: [MissingTableException] Table categories for model Category was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'categories',
+  'class' => 'Category',
+  'ds' => 'default',
+)
+Request URL: /categories
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Model.php(3653): Model->setSource('categories')
+#1 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): Model->getDataSource()
+#2 /home/ubuntu/workspace/app/Controller/CategoriesController.php(6): Model->__call('generatetreelis...', Array)
+#3 /home/ubuntu/workspace/app/Controller/CategoriesController.php(6): AppModel->generatetreelist(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#4 [internal function]: CategoriesController->index()
+#5 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#6 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#8 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2016-01-13 04:43:20 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generatetreelist' at line 1
+Request URL: /categories
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generatetreelis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generatetreelis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generatetreelis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generatetreelis...', Array, Object(AppModel))
+#5 /home/ubuntu/workspace/app/Controller/CategoriesController.php(6): Model->__call('generatetreelis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/CategoriesController.php(6): AppModel->generatetreelist(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: CategoriesController->index()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-13 04:44:58 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /categories
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(AppModel))
+#5 /home/ubuntu/workspace/app/Controller/CategoriesController.php(6): Model->__call('generateTreeLis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/CategoriesController.php(6): AppModel->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: CategoriesController->index()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-13 04:47:06 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /categories
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(AppModel))
+#5 /home/ubuntu/workspace/app/Controller/CategoriesController.php(6): Model->__call('generateTreeLis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/CategoriesController.php(6): AppModel->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: CategoriesController->index()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-13 04:49:24 Error: [MissingViewException] View file "Categories/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Categories/index.ctp',
+)
+Request URL: /categories
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#4 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-13 04:50:14 Error: Fatal Error (1): Call to a member function link() on a non-object in [/home/ubuntu/workspace/app/View/Categories/index.ctp, line 2]
+2016-01-13 04:50:14 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /categories
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 2, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 2, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 05:05:33 Error: Fatal Error (1): Call to a member function link() on a non-object in [/home/ubuntu/workspace/app/View/Categories/index.ctp, line 2]
+2016-01-13 05:05:33 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /categories
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 2, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 2, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 11:49:55 Error: Fatal Error (1): Call to a member function link() on a non-object in [/home/ubuntu/workspace/app/View/Categories/index.ctp, line 2]
+2016-01-13 11:49:55 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /categories
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 2, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 2, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 11:53:34 Error: Fatal Error (1): Call to a member function link() on a non-object in [/home/ubuntu/workspace/app/View/Categories/index.ctp, line 2]
+2016-01-13 11:53:34 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /categories
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 2, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 2, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 12:00:09 Error: Fatal Error (1): Call to a member function link() on a non-object in [/home/ubuntu/workspace/app/View/Categories/index.ctp, line 6]
+2016-01-13 12:00:09 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /categories
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 6, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 6, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 12:04:28 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generatetreelist' at line 1
+Request URL: /categories/add
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generatetreelis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generatetreelis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generatetreelis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generatetreelis...', Array, Object(Category))
+#5 /home/ubuntu/workspace/app/Controller/CategoriesController.php(16): Model->__call('generatetreelis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/CategoriesController.php(16): Category->generatetreelist(NULL, NULL, NULL, ' - ')
+#7 [internal function]: CategoriesController->add()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-13 12:08:14 Error: Fatal Error (1): Call to a member function create() on a non-object in [/home/ubuntu/workspace/app/View/Categories/add.ctp, line 4]
+2016-01-13 12:08:14 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /categories/add
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 4, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 4, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 12:25:19 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ';' in [/home/ubuntu/workspace/app/View/Categories/add.ctp, line 4]
+2016-01-13 12:25:19 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ';'
+Request URL: /categories/add
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 4, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 4, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 12:25:58 Error: Fatal Error (1): Call to a member function create() on a non-object in [/home/ubuntu/workspace/app/View/Categories/add.ctp, line 4]
+2016-01-13 12:25:58 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /categories/add
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 4, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 4, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 12:26:46 Error: Fatal Error (1): Call to a member function create() on a non-object in [/home/ubuntu/workspace/app/View/Categories/add.ctp, line 4]
+2016-01-13 12:26:46 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /categories/add
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 4, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 4, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 12:33:31 Error: Fatal Error (4): syntax error, unexpected ''Category'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in [/home/ubuntu/workspace/app/View/Categories/add.ctp, line 4]
+2016-01-13 12:33:31 Error: [FatalErrorException] syntax error, unexpected ''Category'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'
+Request URL: /categories/add
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 4, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 4, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 12:40:20 Error: [MissingActionException] Action CategoriesController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'edit',
+)
+Request URL: /categories/edit/1
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#2 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-13 12:48:40 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generatetreelist' at line 1
+Request URL: /categories/edit/6
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generatetreelis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generatetreelis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generatetreelis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generatetreelis...', Array, Object(Category))
+#5 /home/ubuntu/workspace/app/Controller/CategoriesController.php(38): Model->__call('generatetreelis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/CategoriesController.php(38): Category->generatetreelist(NULL, NULL, NULL, ' - ')
+#7 [internal function]: CategoriesController->edit('6')
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-13 12:50:27 Error: Fatal Error (1): Call to a member function link() on a non-object in [/home/ubuntu/workspace/app/View/Categories/edit.ctp, line 3]
+2016-01-13 12:50:27 Error: [FatalErrorException] Call to a member function link() on a non-object
+Request URL: /categories/edit/6
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 3, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 3, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 13:05:29 Error: [MissingActionException] Action CategoriesController::delete() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'delete',
+)
+Request URL: /categories/delete/4
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#2 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-13 13:18:35 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Organigrama))
+#5 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(26): Model->__call('generateTreeLis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(26): Organigrama->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: OrganigramasController->index()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-13 13:20:09 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Organigrama))
+#5 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(26): Model->__call('generateTreeLis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(26): Organigrama->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: OrganigramasController->index()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-13 13:20:52 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/home/ubuntu/workspace/app/Controller/OrganigramasController.php, line 99]
+2016-01-13 13:20:52 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 99)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 99, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 99, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 13:21:31 Error: Fatal Error (4): syntax error, unexpected end of file, expecting function (T_FUNCTION) in [/home/ubuntu/workspace/app/Controller/OrganigramasController.php, line 113]
+2016-01-13 13:21:31 Error: [FatalErrorException] syntax error, unexpected end of file, expecting function (T_FUNCTION)
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 113)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 113, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 113, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 13:22:45 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Organigrama))
+#5 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(26): Model->__call('generateTreeLis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(26): Organigrama->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: OrganigramasController->index()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-13 13:23:49 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Organigrama))
+#5 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(26): Model->__call('generateTreeLis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(26): Organigrama->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: OrganigramasController->index()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-13 13:25:16 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Organigrama))
+#5 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(26): Model->__call('generateTreeLis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(26): Organigrama->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: OrganigramasController->index()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-13 13:26:51 Error: [MissingActionException] Action OrganigramasController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'OrganigramasController',
+  'action' => 'index',
+)
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#2 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-13 13:27:45 Error: Fatal Error (1): Call to a member function generateTreeList() on a non-object in [/home/ubuntu/workspace/app/Controller/OrganigramasController.php, line 12]
+2016-01-13 13:27:45 Error: [FatalErrorException] Call to a member function generateTreeList() on a non-object
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 12, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 12, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 13:28:20 Error: Fatal Error (1): Call to a member function generateTreeList() on a non-object in [/home/ubuntu/workspace/app/Controller/OrganigramasController.php, line 11]
+2016-01-13 13:28:20 Error: [FatalErrorException] Call to a member function generateTreeList() on a non-object
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 11, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 11, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 13:29:45 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Organigrama))
+#5 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(5): Model->__call('generateTreeLis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(5): Organigrama->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: OrganigramasController->index()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-13 13:31:46 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Organigrama))
+#5 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(5): Model->__call('generateTreeLis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(5): Organigrama->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: OrganigramasController->index()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-13 13:33:06 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('generateTreeLis...', Array)
+#2 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /home/ubuntu/workspace/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(Organigrama))
+#5 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(5): Model->__call('generateTreeLis...', Array)
+#6 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(5): Organigrama->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: OrganigramasController->index()
+#8 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#9 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#11 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-01-13 13:34:04 Error: Fatal Error (1): Call to a member function generateTreeList() on a non-object in [/home/ubuntu/workspace/app/Controller/OrganigramasController.php, line 6]
+2016-01-13 13:34:04 Error: [FatalErrorException] Call to a member function generateTreeList() on a non-object
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 6, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 6, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 13:35:50 Error: Fatal Error (1): Call to a member function generateTreeList() on a non-object in [/home/ubuntu/workspace/app/Controller/OrganigramasController.php, line 6]
+2016-01-13 13:35:50 Error: [FatalErrorException] Call to a member function generateTreeList() on a non-object
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 6, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 6, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 13:38:22 Error: Fatal Error (1): Call to a member function generateTreeList() on a non-object in [/home/ubuntu/workspace/app/Controller/OrganigramasController.php, line 6]
+2016-01-13 13:38:22 Error: [FatalErrorException] Call to a member function generateTreeList() on a non-object
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 6, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 6, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 13:38:52 Error: Fatal Error (1): Call to a member function generateTreeList() on a non-object in [/home/ubuntu/workspace/app/Controller/OrganigramasController.php, line 6]
+2016-01-13 13:38:52 Error: [FatalErrorException] Call to a member function generateTreeList() on a non-object
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 6, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 6, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 13:39:55 Error: Fatal Error (1): Call to a member function generateTreeList() on a non-object in [/home/ubuntu/workspace/app/Controller/OrganigramasController.php, line 6]
+2016-01-13 13:39:55 Error: [FatalErrorException] Call to a member function generateTreeList() on a non-object
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 6, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 6, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 13:41:54 Error: Fatal Error (1): Call to a member function generateTreeList() on a non-object in [/home/ubuntu/workspace/app/Controller/OrganigramasController.php, line 6]
+2016-01-13 13:41:54 Error: [FatalErrorException] Call to a member function generateTreeList() on a non-object
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 6, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 6, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 13:42:53 Error: Fatal Error (1): Call to a member function generateTreeList() on a non-object in [/home/ubuntu/workspace/app/Controller/OrganigramasController.php, line 6]
+2016-01-13 13:42:53 Error: [FatalErrorException] Call to a member function generateTreeList() on a non-object
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/ubuntu/wo...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/ubuntu/wo...', 6, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/ubuntu/wo...', 6, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 13:44:18 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [/home/ubuntu/workspace/app/Controller/OrganigramasController.php, line 6]
+2016-01-13 13:44:18 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 6, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 6, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 13:46:11 Error: [MissingViewException] View file "OrganigramasController/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'OrganigramasController/index.ctp',
+)
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#4 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-13 13:47:12 Error: [MissingViewException] View file "OrganigramasController/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'OrganigramasController/index.ctp',
+)
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#4 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-13 13:48:06 Error: [MissingViewException] View file "OrganigramasController/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'OrganigramasController/index.ctp',
+)
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#4 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-13 13:49:27 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [/home/ubuntu/workspace/app/Controller/OrganigramasController.php, line 6]
+2016-01-13 13:49:27 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 6, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 6, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 13:57:14 Error: [MissingActionException] Action OrganigramasController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'OrganigramasController',
+  'action' => 'add',
+)
+Request URL: /organigramas/add
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#2 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-13 14:45:48 Error: [MissingActionException] Action OrganigramasController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'OrganigramasController',
+  'action' => 'edit',
+)
+Request URL: /organigramas/edit/35
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#2 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-13 19:56:15 Error: Fatal Error (4): syntax error, unexpected 'organigrama' (T_STRING), expecting ']' in [/home/ubuntu/workspace/app/View/Organigramas/index.ctp, line 30]
+2016-01-13 19:56:15 Error: [FatalErrorException] syntax error, unexpected 'organigrama' (T_STRING), expecting ']'
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 30, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 30, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 19:56:55 Error: Fatal Error (4): syntax error, unexpected 'organigrama' (T_STRING), expecting ']' in [/home/ubuntu/workspace/app/View/Organigramas/index.ctp, line 30]
+2016-01-13 19:56:55 Error: [FatalErrorException] syntax error, unexpected 'organigrama' (T_STRING), expecting ']'
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 30, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 30, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 19:57:46 Error: Fatal Error (4): syntax error, unexpected 'organigrama' (T_STRING), expecting ']' in [/home/ubuntu/workspace/app/View/Organigramas/index.ctp, line 30]
+2016-01-13 19:57:46 Error: [FatalErrorException] syntax error, unexpected 'organigrama' (T_STRING), expecting ']'
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 30, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 30, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 19:58:24 Error: Fatal Error (4): syntax error, unexpected 'id' (T_STRING), expecting ']' in [/home/ubuntu/workspace/app/View/Organigramas/index.ctp, line 28]
+2016-01-13 19:58:24 Error: [FatalErrorException] syntax error, unexpected 'id' (T_STRING), expecting ']'
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 28, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 28, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 20:00:07 Error: Fatal Error (4): syntax error, unexpected 'id' (T_STRING), expecting ']' in [/home/ubuntu/workspace/app/View/Organigramas/index.ctp, line 28]
+2016-01-13 20:00:07 Error: [FatalErrorException] syntax error, unexpected 'id' (T_STRING), expecting ']'
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 28, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 28, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 20:00:31 Error: Fatal Error (4): syntax error, unexpected 'id' (T_STRING), expecting ']' in [/home/ubuntu/workspace/app/View/Organigramas/index.ctp, line 28]
+2016-01-13 20:00:31 Error: [FatalErrorException] syntax error, unexpected 'id' (T_STRING), expecting ']'
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 28, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 28, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 20:00:35 Error: Fatal Error (4): syntax error, unexpected 'id' (T_STRING), expecting ']' in [/home/ubuntu/workspace/app/View/Organigramas/index.ctp, line 28]
+2016-01-13 20:00:35 Error: [FatalErrorException] syntax error, unexpected 'id' (T_STRING), expecting ']'
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 28, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 28, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 20:00:42 Error: Fatal Error (4): syntax error, unexpected 'id' (T_STRING), expecting ']' in [/home/ubuntu/workspace/app/View/Organigramas/index.ctp, line 28]
+2016-01-13 20:00:42 Error: [FatalErrorException] syntax error, unexpected 'id' (T_STRING), expecting ']'
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 28, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 28, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-13 20:01:14 Error: Fatal Error (4): syntax error, unexpected 'organigrama' (T_STRING), expecting ']' in [/home/ubuntu/workspace/app/View/Organigramas/index.ctp, line 30]
+2016-01-13 20:01:14 Error: [FatalErrorException] syntax error, unexpected 'organigrama' (T_STRING), expecting ']'
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 30, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 30, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-14 00:41:24 Error: [MissingActionException] Action OrganigramasController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'OrganigramasController',
+  'action' => 'view',
+)
+Request URL: /organigramas/view/26
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#2 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-14 01:20:56 Error: [NotFoundException] Not Found
+Request URL: /organigramas/index/page:4
+Stack Trace:
+#0 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(21): PaginatorComponent->paginate()
+#1 [internal function]: OrganigramasController->index()
+#2 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#3 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#5 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-01-14 01:21:56 Error: [NotFoundException] Not Found
+Request URL: /organigramas/index/page:4
+Stack Trace:
+#0 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(21): PaginatorComponent->paginate()
+#1 [internal function]: OrganigramasController->index()
+#2 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#3 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#5 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-01-14 01:22:15 Error: [NotFoundException] Not Found
+Request URL: /organigramas/index/page:4
+Stack Trace:
+#0 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(21): PaginatorComponent->paginate()
+#1 [internal function]: OrganigramasController->index()
+#2 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#3 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#5 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-01-14 01:22:33 Error: [NotFoundException] Not Found
+Request URL: /organigramas/index/page:4
+Stack Trace:
+#0 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(21): PaginatorComponent->paginate()
+#1 [internal function]: OrganigramasController->index()
+#2 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#3 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#5 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-01-14 01:23:08 Error: [NotFoundException] Not Found
+Request URL: /organigramas/index/page:4
+Stack Trace:
+#0 /home/ubuntu/workspace/app/Controller/OrganigramasController.php(21): PaginatorComponent->paginate()
+#1 [internal function]: OrganigramasController->index()
+#2 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OrganigramasController), Array)
+#3 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#5 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2016-01-14 01:34:13 Error: Fatal Error (4): syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in [/home/ubuntu/workspace/app/View/Organigramas/index.ctp, line 21]
+2016-01-14 01:34:13 Error: [FatalErrorException] syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 21, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 21, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-14 02:17:52 Error: [MissingControllerException] Controller class FuncionesGruposApoyosGlobalesController could not be found.
+Exception Attributes: array (
+  'class' => 'FuncionesGruposApoyosGlobalesController',
+  'plugin' => NULL,
+)
+Request URL: /funciones_grupos_apoyos_globales
+Stack Trace:
+#0 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-14 02:17:58 Error: [MissingActionException] Action CargosPersonasController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'CargosPersonasController',
+  'action' => 'index',
+)
+Request URL: /cargos_personas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CargosPersonasController), Object(CakeRequest))
+#2 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-01-14 02:40:12 Error: Fatal Error (4): syntax error, unexpected '<' in [/home/ubuntu/workspace/app/View/Organigramas/edit.ctp, line 3]
+2016-01-14 02:40:12 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /organigramas/edit/1
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 3, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 3, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-14 11:53:50 Error: [MissingControllerException] Controller class OrganigramaController could not be found.
+Exception Attributes: array (
+  'class' => 'OrganigramaController',
+  'plugin' => NULL,
+)
+Request URL: /organigrama
+Stack Trace:
+#0 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-15 21:49:35 Error: Fatal Error (1): Call to undefined function reorder() in [/home/ubuntu/workspace/app/Controller/OrganigramasController.php, line 23]
+2016-01-15 21:49:35 Error: [FatalErrorException] Call to undefined function reorder()
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/ubuntu/wo...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/ubuntu/wo...', 23, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/ubuntu/wo...', 23, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-15 21:50:21 Error: Fatal Error (1): Call to undefined function reorder() in [/home/ubuntu/workspace/app/Controller/OrganigramasController.php, line 25]
+2016-01-15 21:50:21 Error: [FatalErrorException] Call to undefined function reorder()
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/ubuntu/wo...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/ubuntu/wo...', 25, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/ubuntu/wo...', 25, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-15 22:06:51 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'JavascriptHelper',
+  'plugin' => false,
+)
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/View/View.php(907): HelperCollection->load('Javascript', Array)
+#1 /home/ubuntu/workspace/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(1247): View->__construct(Object(OrganigramasController))
+#3 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(946): Controller->_getViewObject()
+#4 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#6 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-01-15 22:34:18 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'JavascriptHelper',
+  'plugin' => false,
+)
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/View/View.php(907): HelperCollection->load('Javascript', Array)
+#1 /home/ubuntu/workspace/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(1247): View->__construct(Object(OrganigramasController))
+#3 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(946): Controller->_getViewObject()
+#4 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#6 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
