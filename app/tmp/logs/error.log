@@ -1110,3 +1110,105 @@ Stack Trace:
 #5 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
 #6 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #7 {main}
+2016-01-21 17:52:58 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'JavascriptHelper',
+  'plugin' => false,
+)
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/View/View.php(907): HelperCollection->load('Javascript', Array)
+#1 /home/ubuntu/workspace/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(1247): View->__construct(Object(OrganigramasController))
+#3 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(946): Controller->_getViewObject()
+#4 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#6 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-01-21 18:44:56 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'JavascriptHelper',
+  'plugin' => false,
+)
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/View/View.php(907): HelperCollection->load('Javascript', Array)
+#1 /home/ubuntu/workspace/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(1247): View->__construct(Object(OrganigramasController))
+#3 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(946): Controller->_getViewObject()
+#4 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#6 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-01-21 19:40:51 Error: Fatal Error (1): Call to undefined method View::array() in [/home/ubuntu/workspace/app/View/Organigramas/index.ctp, line 17]
+2016-01-21 19:40:51 Error: [FatalErrorException] Call to undefined method View::array()
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/ubuntu/wo...', 17)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/ubuntu/wo...', 17, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/ubuntu/wo...', 17, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 20:33:08 Error: Fatal Error (4): syntax error, unexpected ';' in [/home/ubuntu/workspace/app/View/Organigramas/index.ctp, line 30]
+2016-01-21 20:33:08 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 30, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 30, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 20:36:08 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [/home/ubuntu/workspace/app/View/Organigramas/index.ctp, line 29]
+2016-01-21 20:36:08 Error: [FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 29, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 29, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 21:33:41 Error: [MissingViewException] View file "organigramas/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'organigramas/index.ctp',
+)
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#4 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-01-21 21:35:06 Error: Fatal Error (4): syntax error, unexpected 'debug' (T_STRING), expecting function (T_FUNCTION) in [/home/ubuntu/workspace/app/Controller/OrganigramasController.php, line 11]
+2016-01-21 21:35:06 Error: [FatalErrorException] syntax error, unexpected 'debug' (T_STRING), expecting function (T_FUNCTION)
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 11, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 11, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 21:40:33 Error: Fatal Error (1): Unsupported operand types in [/home/ubuntu/workspace/lib/Cake/Controller/Controller.php, line 853]
+2016-01-21 21:40:33 Error: [FatalErrorException] Unsupported operand types
+Request URL: /organigramas/index/page:2
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/home/ubuntu/wo...', 853)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/home/ubuntu/wo...', 853, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/home/ubuntu/wo...', 853, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-01-21 21:43:56 Error: Fatal Error (1): Unsupported operand types in [/home/ubuntu/workspace/lib/Cake/Controller/Controller.php, line 853]
+2016-01-21 21:43:56 Error: [FatalErrorException] Unsupported operand types
+Request URL: /organigramas/index/page:2
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/home/ubuntu/wo...', 853)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/home/ubuntu/wo...', 853, Array)
+#2 /home/ubuntu/workspace/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/home/ubuntu/wo...', 853, Array)
+#3 /home/ubuntu/workspace/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

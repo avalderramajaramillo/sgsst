@@ -1,38 +1,55 @@
 <?php
-App::uses('AppModel', 'Model');
-    class OrganigramasController extends AppController { 
-        var $name = 'Organigramas';
-        var $helpers = array( 'Javascript'); 
-         /**
-        * Components
-        *
-        * @var array
-        */
-    	public $components = array('Paginator');
+App::uses('AppController', 'Controller');
+/**
+ * Organigramas Controller
+ *
+ * @property Organigrama $Organigrama
+ * @property PaginatorComponent $Paginator
+ */
+class OrganigramasController extends AppController {
+	var $name = 'Organigramas';
+// /**
+//  * Components
+//  *
+//  * @var array
+//  */
+	public $components = array('Paginator');
 
-        /**
-        * index method
-        *
-        * @return void
-        */
-              
-        public function index() { 
-         	$this->Organigrama->recursive = 0;
- 			$this->set('organigramas', $this->Paginator->paginate());
-            //$organigramas = $this->Organigrama->generateTreeList(null, null, null, '&nbsp;&nbsp;&nbsp;'); 
-            
-            $this->set(compact('organigramas')); 
-            // reorder(array('id' => null, 'field' => $organigramas->displayField, 'order' => 'ASC', 'verify' => true));
-        }
-        public function view($id = null) {
-			if (!$this->Organigrama->exists($id)) {
-				throw new NotFoundException(__('Invalid organigramas'));
-			}
-			$options = array('conditions' => array('Organigrama.' . $this->Organigrama->primaryKey => $id));
-			$this->set('organigrama', $this->Organigrama->find('first', $options));
-		} 
-        public function add() { 
-            if (!empty($this -> data) ) { 
+/**
+ * index method
+ *
+ * @return void
+ */
+	public function index() {
+		$this->Organigrama->recursive = 0;
+		$organigramas = $this->Organigrama->generateTreeList(null, null, null, '&nbsp;&nbsp;&nbsp;');
+
+		$this->set('organigramas', $this->Paginator->paginate());
+		$this->set(compact('organigramas')); 
+	}
+
+/**
+ * view method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function view($id = null) {
+		if (!$this->Organigrama->exists($id)) {
+			throw new NotFoundException(__('Invalid organigrama'));
+		}
+		$options = array('conditions' => array('Organigrama.' . $this->Organigrama->primaryKey => $id));
+		$this->set('organigrama', $this->Organigrama->find('first', $options));
+	}
+
+/**
+ * add method
+ *
+ * @return void
+ */
+	public function add() {
+		if (!empty($this -> data) ) { 
                 $this->Organigrama->save($this -> data); 
                 $this->Session->setFlash('A new organigrama has been added'); 
                 $this->redirect(array('action' => 'index')); 
@@ -45,9 +62,17 @@ App::uses('AppModel', 'Model');
                 } 
                 $this->set(compact('parents')); 
             } 
-        }
-        public function edit($id=null) { 
-            if (!empty($this->data)) { 
+	}
+
+/**
+ * edit method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function edit($id = null) {
+		if (!empty($this->data)) { 
                 if($this->Organigrama->save($this->data)==false) 
                 $this->Session->setFlash('Error saving Node.'); 
                 $this->redirect(array('action'=>'index')); 
@@ -61,17 +86,25 @@ App::uses('AppModel', 'Model');
                 $parents[$key] = $value; 
                 $this->set(compact('parents')); 
             } 
-        }
-        public function delete($id=null) { 
-            if($id==null) 
-            die("No ID received"); 
-            $this->Organigrama->id=$id; 
-            if($this->Organigrama->removeFromTree($id,true)==false) 
-            $this->Session->setFlash('The Organigrama could not be deleted.'); 
-            $this->Session->setFlash('Organigrama has been deleted.'); 
-            $this->redirect(array('action'=>'index')); 
-        }
-        // Función para organizar las categorías
+	}
+
+/**
+ * delete method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function delete($id = null) {
+	    if($id==null) 
+	    die("No ID received"); 
+	    $this->Organigrama->id=$id; 
+	    if($this->Organigrama->removeFromTree($id,true)==false) 
+	    $this->Session->setFlash('The Organigrama could not be deleted.'); 
+	    $this->Session->setFlash('Organigrama has been deleted.'); 
+	    $this->redirect(array('action'=>'index'));
+	}
+	// Función para organizar las categorías
         public function organizar() {}
         
         public function getnodes() {
@@ -127,5 +160,4 @@ App::uses('AppModel', 'Model');
         
            exit('1');
         }
-    } 
-?>
+}
