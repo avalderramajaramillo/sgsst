@@ -1086,3 +1086,27 @@ Stack Trace:
 #5 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
 #6 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #7 {main}
+2016-01-20 19:21:18 Error: [MissingControllerException] Controller class OrganigramaController could not be found.
+Exception Attributes: array (
+  'class' => 'OrganigramaController',
+  'plugin' => NULL,
+)
+Request URL: /organigrama
+Stack Trace:
+#0 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-20 19:21:33 Error: [MissingHelperException] Helper class JavascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'JavascriptHelper',
+  'plugin' => false,
+)
+Request URL: /organigramas
+Stack Trace:
+#0 /home/ubuntu/workspace/lib/Cake/View/View.php(907): HelperCollection->load('Javascript', Array)
+#1 /home/ubuntu/workspace/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(1247): View->__construct(Object(OrganigramasController))
+#3 /home/ubuntu/workspace/lib/Cake/Controller/Controller.php(946): Controller->_getViewObject()
+#4 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /home/ubuntu/workspace/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrganigramasController), Object(CakeRequest))
+#6 /home/ubuntu/workspace/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
